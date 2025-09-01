@@ -1,0 +1,63 @@
+/* Header específico da página de produtos */
+.py-5.bg-light {
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.05), rgba(74, 124, 89, 0.1)) !important;
+}
+
+/* Filtros de navegação específicos para produtos */
+.py-4.bg-white {
+    background: linear-gradient(180deg, #ffffff, #f8f9fa) !important;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+/* Categorias de produtos específicas */
+.product-category {
+    scroll-margin-top: 120px;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.product-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--amazonia-gold), transparent);
+}
+
+/* Efeitos específicos para a página de produtos */
+#produtos {
+    background: linear-gradient(180deg, #f8f9fa, #ffffff 5%);
+}
+
+/* Estilo para os botões de filtro na página de produtos */
+.btn-outline-amazonia {
+    margin: 0.25rem;
+}
+
+/* Ajustes responsivos específicos para produtos */
+@media (max-width: 992px) {
+    .product-category::before {
+        left: -20px;
+        right: -20px;
+    }
+}
+
+/* Efeito de destaque para a categoria ativa */
+.product-category:target {
+    animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+    0% { background-color: transparent; }
+    50% { background-color: rgba(212, 165, 116, 0.1); }
+    100% { background-color: transparent; }
+}
+
+/* Estilo para o botão de voltar ao início */
+.btn-amazonia.btn-lg {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Artes da Amazônia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="stylePrincipal.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-leaf me-2"></i>Amazônia Viva
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Header -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 section-title mb-3">Nossos Produtos</h1>
+            <p class="lead text-muted">Artesanato amazônico feito com técnicas ancestrais e materiais sustentáveis</p>
+        </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="py-4 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <a href="#cestaria" class="btn btn-outline-amazonia">Cestaria</a>
+                        <a href="#biojoias" class="btn btn-outline-amazonia">Biojoias</a>
+                        <a href="#ceramica" class="btn btn-outline-amazonia">Cerâmica</a>
+                        <a href="#tecidos" class="btn btn-outline-amazonia">Tecidos</a>
+                        <a href="#mascaras" class="btn btn-outline-amazonia">Máscaras</a>
+                        <a href="#instrumentos" class="btn btn-outline-amazonia">Instrumentos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <!-- Cestaria -->
+            <div id="cestaria" class="product-category mb-5">
+                <h2 class="section-title mb-4">Cestaria Indígena</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCI2OhmFVvb4IH7GLFKqhUzUVZ2BR22U5_a6jS29buByDPZn4sJb1XOyMapcEAxPPu35IAa_0lAiunRtrycDD7NfCOc7qBuVvTH6qCj_6d5zmgWhxwNUBt0CBkkRraUq1Fv7Gte_5zt3J7/s1600/001245%252C+Cestaria+ind%25C3%25ADgena+1.jpg"
+                            class="card-img-top" alt="Cestaria Indígena" style="height: 250px; object-fit: cover;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Cesta Tradicional Kayapó</h5>
+                                <p class="card-text flex-grow-1">Cestas tradicionais feitas com fibras naturais da floresta amazônica.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 89,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto1Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://cdn.awsli.com.br/800x800/2728/2728453/produto/259971861/cesto-redondo-de-palha-de-taboa-38x20-1-ahptcj6gxu.jpg"
+                            class="card-img-top" alt="Cesta de Palha" style="height: 250px; object-fit: cover;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Cesta de Palha de Tucumã</h5>
+                                <p class="card-text flex-grow-1">Cesta resistente feita com palha de tucumã, ideal para uso diário.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 75,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto7Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://m.media-amazon.com/images/I/71BkT+aK+kL._UF894,1000_QL80_.jpg"
+                            class="card-img-top" alt="Cesta Decorativa" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Cesta Decorativa com Grafismos</h5>
+                                <p class="card-text flex-grow-1">Cesta com padrões tradicionais indígenas, perfeita para decoração.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 120,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto8Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biojoias -->
+            <div id="biojoias" class="product-category mb-5">
+                <h2 class="section-title mb-4">Biojoias Amazônicas</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://www.amazoniavital.com.br/image/cache/catalog/biojoias-2024/1-mg4789-copiar-683x1024.JPG"
+                            class="card-img-top" alt="Biojoias" style="height: 250px; object-fit: cover;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Colar de Sementes de Açaí</h5>
+                                <p class="card-text flex-grow-1">Colar artesanal feito com sementes de açaí e tucumã.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 45,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto2Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://acdn-us.mitiendanube.com/stores/001/470/585/products/img_03841-06251776fe98080af716948171154898-240-0.jpeg"
+                            class="card-img-top" alt="Pulseira de Sementes" style="height: 250px; object-fit: cover;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Conjunto Pulseira e Brincos</h5>
+                                <p class="card-text flex-grow-1">Conjunto harmonioso de pulseira e brincos feitos com sementes naturais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 68,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto9Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://m.media-amazon.com/images/I/41FBYJxQ1oL._SY1000_.jpg"
+                            class="card-img-top" alt="Tornozeleira" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tornozeleira de Sementes</h5>
+                                <p class="card-text flex-grow-1">Tornozeleira tradicional feita com sementes coloridas da Amazônia.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 35,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto10Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cerâmica -->
+            <div id="ceramica" class="product-category mb-5">
+                <h2 class="section-title mb-4">Cerâmica Marajoara</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://solutudo-cdn.s3-sa-east-1.amazonaws.com/prod/adv_files/561e636d-7e24-42fc-92fa-24e2ac1f1305/14b4f412-c1a4-4665-bb13-f28e56b77e38.jpg"
+                            class="card-img-top" alt="Cerâmica Marajoara" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Vaso Marajoara Tradicional</h5>
+                                <p class="card-text flex-grow-1">Réplica autêntica da cerâmica marajoara com pigmentos naturais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 125,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto3Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://cdn.awsli.com.br/2500x2500/610/610975/produto/232860147/1717fb74-5ad3-42bc-a9b1-26a5e3ca9c7d-4u6hg8ltjg.jpg"
+                            class="card-img-top" alt="Prato Decorativo" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Prato Decorativo com Grafismos</h5>
+                                <p class="card-text flex-grow-1">Prato artesanal với desenhos inspirados na cultura marajoara.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 95,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto11Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://acdn-us.mitiendanube.com/stores/001/819/160/products/ba661d2e-17ff-4c40-bd9f-5fee28e303f6-7ee143a0a9097f5e3016339665871141-1024-1024.jpeg"
+                            class="card-img-top" alt="Miniatura Cerâmica" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Miniatura Cerâmica Ritualística</h5>
+                                <p class="card-text flex-grow-1">Pequenas peças cerimoniais ideais para colecionadores.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 58,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto12Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tecidos -->
+            <div id="tecidos" class="product-category mb-5">
+                <h2 class="section-title mb-4">Tecidos Sustentáveis</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://images.unsplash.com/photo-1657986418911-6cceb9891c6e"
+                            class="card-img-top" alt="Tecidos Sustentáveis" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tecido de Tucumã e Algodão</h5>
+                                <p class="card-text flex-grow-1">Tecido ecológico produzido com fibras de tucumã e algodão nativo.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 67,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto4Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://vault.pulsarimagens.com.br/file/thumb/02ZZ260.jpg"
+                            class="card-img-top" alt="Rede de Pescar" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Rede Artesanal Ribeirinha</h5>
+                                <p class="card-text flex-grow-1">Rede tradicional feita por comunidades ribeirinhas com fibras naturais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 145,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto13Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://images.tcdn.com.br/img/img_prod/1171557/manta_indiana_ganesha_495_6_178a2643c80533e9e8216214d1c5d894_20250820095834.jpg"
+                            class="card-img-top" alt="Manta Decorativa" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Manta Decorativa Indígena</h5>
+                                <p class="card-text flex-grow-1">Manta com padrões geométricos tradicionais, tecida em tear manual.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 185,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto14Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Máscaras -->
+            <div id="mascaras" class="product-category mb-5">
+                <h2 class="section-title mb-4">Máscaras Rituais</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://boxloja-std-cdn-r2.minhaboxloja.com/lojas/q2r07/produtos/693f9ba7-2412-42ea-b3ea-f245cd71b882.png"
+                            class="card-img-top" alt="Máscaras Rituais" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Máscara do Espírito da Floresta</h5>
+                                <p class="card-text flex-grow-1">Máscara cerimonial esculpida em madeira com pigmentos naturais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 198,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto5Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://www.shutterstock.com/image-photo/jaguar-dance-mask-belonging-nahua-260nw-2127034718.jpg"
+                            class="card-img-top" alt="Máscara Animal" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Máscara do Jaguar Sagrado</h5>
+                                <p class="card-text flex-grow-1">Representação do jaguar, animal sagrado nas tradições amazônicas.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 235,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto15Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://www.artesintonia.com.br/cdn/shop/files/BASE1-4.jpg?v=1755894037&width=1100"
+                            class="card-img-top" alt="Máscara Decorativa" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Máscara Decorativa Tribal</h5>
+                                <p class="card-text flex-grow-1">Máscara ornamental com desenhos geométricos ancestrais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 165,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto16Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instrumentos -->
+            <div id="instrumentos" class="product-category mb-5">
+                <h2 class="section-title mb-4">Instrumentos Musicais</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2024/09/27/imagem-de-freepik-(46)-vf46249wkpd2.png"
+                            class="card-img-top" alt="Instrumentos Musicais" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Kit Flauta e Maracás</h5>
+                                <p class="card-text flex-grow-1">Instrumentos tradicionais feitos com bambu e cabaças naturais.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 75,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto6Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://www.redalyc.org/journal/3940/394065203001/1981-8122-bgoeldi-15-1-e20180128-gf02.jpg"
+                            class="card-img-top" alt="Tambor" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Tambor Ritual Amazônico</h5>
+                                <p class="card-text flex-grow-1">Tambor feito com tronco oco e couro de peixe, usado em cerimônias.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 285,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto17Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card product-card h-100">
+                            <img src="https://img.elo7.com.br/product/zoom/3B30D11/flauta-pan-curvada-media-flautas.jpg"
+                            class="card-img-top" alt="Flauta de Pã" style="height: 250px; object-fit: cover;">
+                            
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Flauta de Pã Indígena</h5>
+                                <p class="card-text flex-grow-1">Conjunto de flautas de bambu de diferentes tamanhos e sons.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price">R$ 125,00</span>
+                                    <button class="btn btn-amazonia" data-bs-toggle="modal" data-bs-target="#produto18Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-amazonia btn-lg">Voltar para a Página Inicial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0">&copy; 2025 Cooperativa Amazônia Viva. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-0">Feito com <i class="fas fa-heart text-danger"></i> para a COP-30</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modais dos produtos -->
+    <!-- Modal Produto 1 - Cestaria -->
+    <div class="modal fade" id="produto1Modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cesta Tradicional Kayapó</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCI2OhmFVvb4IH7GLFKqhUzUVZ2BR22U5_a6jS29buByDPZn4sJb1XOyMapcEAxPPu35IAa_0lAiunRtrycDD7NfCOc7qBuVvTH6qCj_6d5zmgWhxwNUBt0CBkkRraUq1Fv7Gte_5zt3J7/s1600/001245%252C+Cestaria+ind%25C3%25ADgena+1.jpg"
+                            class="img-fluid rounded" alt="Cestaria Indígena">
+                        
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-success">R$ 89,00</h4>
+                            <p><strong>Descrição:</strong> Cestas artesanais confeccionadas por artesãs indígenas utilizando técnicas ancestrais. Feitas com fibras naturais de arumã e cipó, coletadas de forma sustentável na floresta amazônica.</p>
+                            <p><strong>Dimensões:</strong> 25cm x 15cm x 10cm</p>
+                            <p><strong>Material:</strong> Fibras de arumã e cipó</p>
+                            <p><strong>Origem:</strong> Comunidade Kayapó, Pará</p>
+                            <p><strong>Tempo de confecção:</strong> 3-4 dias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-amazonia">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione os outros modais aqui seguindo o mesmo padrão -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

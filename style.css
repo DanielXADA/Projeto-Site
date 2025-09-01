@@ -1,0 +1,56 @@
+/* Hero sections específicos do index */
+.hero-section {
+    background: linear-gradient(135deg, var(--amazonia-green), var(--amazonia-light-green));
+    color: white;
+    padding: 80px 0;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover img {
+    transform: scale(1.02);
+}
+
+/* Seção about específica do index */
+.about-section {
+    background: linear-gradient(180deg, #f8f9fa, #ffffff);
+    padding: 80px 0;
+}
+
+/* Efeitos visuais adicionais para o index */
+.container {
+    position: relative;
+}
+
+/* Gradiente sutil no fundo das seções */
+section:nth-child(even) {
+    background: linear-gradient(180deg, rgba(212, 165, 116, 0.02), transparent);
+}
+
+/* Estilos específicos para a seção de contato */
+#contato .text-center i {
+    transition: transform 0.3s ease;
+}
+
+#contato .text-center:hover i {
+    transform: scale(1.2);
+}
+
+/* Estilo para a prévia de produtos na página inicial */
+#produtos-preview {
+    background: linear-gradient(180deg, #ffffff, #f8f9fa);
+}
+
+/* Efeito especial para os cards na página inicial */
+#produtos-preview .product-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#produtos-preview .product-card:hover {
+    border-color: var(--amazonia-gold);
+}
